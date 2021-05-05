@@ -55,7 +55,7 @@ function setup() {
   ground = createSprite(width/2,height,width,3);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
-  ground.debug=true
+  ground.debug=false
   ground.setCollider("rectangle",0,0,300,2)
   gameOver = createSprite(width/2,height/2-95);
   gameOver.addImage(gameOverImg);
@@ -75,7 +75,7 @@ function setup() {
   obstaclesGroup = createGroup();
   cloudsGroup = createGroup();
 
-  trex1.debug=true
+  trex1.debug=false
  
   
   score = 0;
@@ -207,7 +207,7 @@ function spawnObstacles(){
     obstacle.lifetime = 300;
    obstacle.setCollider("circle",0,0,150)
    //add each obstacle to the group
-   obstacle.debug=true
+   obstacle.debug=false
     obstaclesGroup.add(obstacle);
     
  }
